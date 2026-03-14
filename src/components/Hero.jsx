@@ -26,6 +26,15 @@ export default function Hero() {
     return () => clearTimeout(timeout)
   }, [text, deleting, roleIndex])
 
+  const downloadResume = () => {
+    const link = document.createElement('a')
+    link.href = '/Akshatha_Resume.pdf'
+    link.download = 'Akshatha_Resume.pdf'
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
+  }
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Mesh Gradient Background */}
@@ -78,7 +87,7 @@ export default function Hero() {
           className="flex flex-wrap justify-center gap-4"
         >
           <a href="#projects" className="px-8 py-4 bg-primary text-bg-dark font-bold rounded-xl hover:scale-105 transition-transform">View Projects</a>
-          <a href="/resume.pdf" download className="px-8 py-4 border-2 border-primary text-primary font-bold rounded-xl hover:bg-primary/10 transition-colors">Download Resume</a>
+          <button onClick={() => downloadResume()} className="px-8 py-4 border-2 border-primary text-primary font-bold rounded-xl hover:bg-primary/10 transition-colors cursor-pointer">Download Resume</button>
           <a href="#contact" className="px-8 py-4 border-2 border-slate-300 dark:border-slate-700 font-bold rounded-xl hover:bg-slate-100 dark:hover:bg-surface transition-colors dark:text-white">Contact Me</a>
         </motion.div>
       </div>
