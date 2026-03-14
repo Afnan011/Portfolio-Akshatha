@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary: #00c7b0;
+  --color-secondary-accent: #8b5cf6;
+  --color-bg-light: #f5f8f8;
+  --color-bg-dark: #0d1117;
+  --color-surface: #161b22;
+  --font-family-display: "Inter", sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--font-family-display);
+    transition: background-color 0.3s, color 0.3s;
+  }
+}
+
+/* Typewriter cursor blink */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+.cursor-blink::after {
+  content: "|";
+  animation: blink 1s step-end infinite;
+  color: var(--color-primary);
+  font-weight: 100;
+}
+
+/* Glow ring animation */
+@keyframes glow-pulse {
+  0%, 100% { box-shadow: 0 0 20px rgba(0, 199, 176, 0.3); }
+  50% { box-shadow: 0 0 40px rgba(0, 199, 176, 0.6); }
+}
+.glow-ring {
+  animation: glow-pulse 3s ease-in-out infinite;
+}
