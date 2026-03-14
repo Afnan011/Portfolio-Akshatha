@@ -1,0 +1,47 @@
+{
+  "name": "projects/17229569689812099683",
+  "projectId": "17229569689812099683",
+  "title": "AKS Portfolio",
+  "visibility": "PRIVATE",
+  "createTime": "2026-03-14T04:29:44.051002Z",
+  "updateTime": "2026-03-14T04:49:37.312130Z",
+  "projectType": "TEXT_TO_UI_PRO",
+  "origin": "STITCH",
+  "deviceType": "DESKTOP",
+  "designTheme": {
+    "colorMode": "DARK",
+    "font": "INTER",
+    "roundness": "ROUND_TWELVE",
+    "customColor": "#00c7b0",
+    "saturation": 2
+  },
+  "screens": {
+    "desktop-portfolio": {
+      "id": "57c590b4f4a54a97a1e70b57f3f445ee",
+      "sourceScreen": "projects/17229569689812099683/screens/57c590b4f4a54a97a1e70b57f3f445ee",
+      "x": 1344,
+      "y": 0,
+      "width": 1280,
+      "height": 5423
+    },
+    "mobile-portfolio": {
+      "id": "9c7f99c21e424ca6ab4078db2fad8e3a",
+      "sourceScreen": "projects/17229569689812099683/screens/9c7f99c21e424ca6ab4078db2fad8e3a",
+      "x": 0,
+      "y": 0,
+      "width": 390,
+      "height": 4599
+    },
+    "index": {
+      "id": "1df97a7559f1455bab9d464ebffdefcb",
+      "sourceScreen": "projects/17229569689812099683/screens/1df97a7559f1455bab9d464ebffdefcb",
+      "x": 0,
+      "y": 0,
+      "width": 2560,
+      "height": 12634
+    }
+  },
+  "metadata": {
+    "userRole": "OWNER"
+  }
+}
